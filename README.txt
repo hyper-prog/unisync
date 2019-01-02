@@ -12,6 +12,8 @@ UniSync
  The UniSync has a graphical user interface names UniSyncGui.
  https://github.com/hyper-prog/unisyncgui
 
+Webpage: http://hyperprog.com/unisync
+
 Compile:
  Simply rename Makefile.linux to Makefile and hit "make" to compile it.
 
