@@ -1,0 +1,29 @@
+CFLAGS= -Wall -O3 -pedantic 
+L_CL_FLAGS= -Wall -O3
+L_SW_FLAGS= -Wall -O3
+COMPILER=c++
+
+all: unisync
+
+unisync: unisync.o catalog.o utils.o
+	$(COMPILER) $(+) -o $(@) $(L_SW_FLAGS)
+
+catalog.o: catalog.cpp unisync.h catalog.h utils.h
+	$(COMPILER) -c $(<) -o $(@) $(CFLAGS)
+
+unisync.o: unisync.cpp unisync.h utils.h catalog.h
+	$(COMPILER) -c $(<) -o $(@) $(CFLAGS)
+
+utils.o: utils.cpp utils.h unisync.h sha2.c md5.c
+	$(COMPILER) -c $(<) -o $(@) $(CFLAGS)
+	
+clean:
+	rm *.o;rm ./unisync
+
+install:
+	install -s -m 0755 unisync /usr/local/bin/unisync
+
+uninstall:
+	rm /usr/local/bin/unisync
+
+

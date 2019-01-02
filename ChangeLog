@@ -1,0 +1,38 @@
+1.0
+    -Moved to github
+
+0.971
+    -Added -wl windows locale switch to display corrent character on buggy windows terminals
+
+0.97
+    -Added -i Interactive/paranoid sync switch.
+     Prints a small statistics and ask user before do real sync.	
+
+0.961
+    -Fix open's third parameter bug
+
+0.96
+    -Dramatical copy/scan speed improvements using platfom dependent api.
+    -Add -std switch to force standard POSIX routines
+    -Fix the root directory scanning on windows/linux
+     (The drive root was claimed to not existed directory)
+    -File/Dir modification time fixes
+    -Error handling fixes
+
+0.953
+    -Fixed stat error handling
+    -Code style fixes
+
+0.952
+    -Added some more error messages when stat error occured.
+    -Fixed missing program return code.
+
+0.951
+    -Typo fixes
+
+0.95
+    -Added -fixtime switch
+    -Fix bug, near unsuccesful directory creating.
+
+0.94
+    -First release

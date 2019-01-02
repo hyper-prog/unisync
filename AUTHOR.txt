@@ -1,0 +1,5 @@
+UniSync
+Universal offline/online direcotry sync/diff utility
+
+Author: Peter Deak (http://hyperprog.com) hyper80@gmail.com
+License: GPLv2
