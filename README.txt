@@ -9,6 +9,8 @@ UniSync
  (Which are not available same time) by creating a catalog file
  and making and update package according to that.
 
+ Documentation: http://hyperprog.com/unisync/unisyncdoc/doc/unisync/using.html
+
  The UniSync has a graphical user interface names UniSyncGui.
  https://github.com/hyper-prog/unisyncgui
 
