@@ -1,4 +1,7 @@
+![Unisync logo](https://raw.githubusercontent.com/hyper-prog/unisync/master/doc/docimg/icon.png)
+
 UniSync
+=======
 
  UniSync is an open-source File synchronization 
  program for Linux and Windows. It is an open source utility 
@@ -13,19 +16,21 @@ UniSync
 
  The UniSync has a graphical user interface names UniSyncGui.
  https://github.com/hyper-prog/unisyncgui
+ 
+ ![UnisyncGui](https://raw.githubusercontent.com/hyper-prog/unisync/master/doc/docimg/unisync_gui.jpg)
+ 
 
 Webpage: http://hyperprog.com/unisync
 
-Compile:
+Compile / Install
+-----------------
+
  Simply rename Makefile.linux to Makefile and hit "make" to compile it.
 
-Author:
- Peter Deak (http://hyperprog.com) hyper80@gmail.com
+Author
+------
+ Péter Deák (http://hyperprog.com) hyper80@gmail.com
 
-License:
+License
+-------
  GPLv2
-
-
-
-
-
