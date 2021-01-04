@@ -297,8 +297,8 @@ int FileCopier::copy_spec(const char *source,const char *dest)
 
     if(PathMaker::mkpath(dest,true))
         return 1;
-
-    if(CopyFileExA(source,dest,NULL,NULL,false,0) == 0)
+    BOOL pbCancel = false;
+    if(CopyFileExA(source,dest,NULL,NULL,&pbCancel,0) == 0)
     {
         fprintf(stderr,"Error, Cannot copy the file: %s (%d)\n",source,(int)GetLastError());
         if(uc->guicall)
